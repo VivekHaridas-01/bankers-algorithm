@@ -33,9 +33,9 @@ Banker’s algorithm comprises of two algorithms:
 2. Resource request algorithm
 
 #### Safety Algorithm
-1. Let Work and Finish be vectors of length m and n, respectively.
-    Initialize:
-        Work = Available <br>        
+1. Let Work and Finish be vectors of length m and n, respectively. <br> 
+    Initialize:<br> 
+        <\t>Work = Available <br>        
         Finish [i] = false for I = 0, 1, ..., n-1 <br>        
 2. Find an į such that both:
 a. Finish [i] = false
