@@ -7,6 +7,7 @@ There are four types of data structures used to implement Banker’s algorithm.
 2. Max Matrix (n*m)
 3. Available Vector (1*m)
 4. Need Matrix (n*m)
+
 Allocation Matrix
 ● Allocation Matrix is a 2D array, of size ‘n*m’.
 ● It is used to define the number of resources of each kind presently
