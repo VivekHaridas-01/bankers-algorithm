@@ -31,10 +31,10 @@ There are four types of data structures used to implement Banker’s algorithm.
 Banker’s algorithm comprises of two algorithms:
 1. Safety algorithm
 2. Resource request algorithm
-
+<p>
 #### Safety Algorithm
 1. Let Work and Finish be vectors of length m and n, respectively.
-    __Initialize:__
+    Initialize:
         Work = Available__
         Finish [i] = false for I = 0, 1, ..., n-1
 2. Find an į such that both:
@@ -45,3 +45,4 @@ If no such i exists, go to step 4.
 Finish[i] = true
 Go to step 2.
 4. If Finish [i] == true for all i, then the system is in a safe state.
+               </p>
