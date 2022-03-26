@@ -35,10 +35,8 @@ Banker’s algorithm comprises of two algorithms:
 #### Safety Algorithm
 1. Let Work and Finish be vectors of length m and n, respectively.
     Initialize:
-        Work = Available__
-        
-        Finish [i] = false for I = 0, 1, ..., n-1
-        
+        Work = Available <br>        
+        Finish [i] = false for I = 0, 1, ..., n-1 <br>        
 2. Find an į such that both:
 a. Finish [i] = false
 b. Needi <= Work
