@@ -1,6 +1,6 @@
 # bankers-algorithm
 Implementation of Banker’s Algorithm for Deadlock Avoidance.
-#### Implementation Details
+## Implementation Details
 We take n as the number of Processes and m as the number of Resources.
 There are four types of data structures used to implement Banker’s algorithm.
 1. Allocation Matrix (n*m)
