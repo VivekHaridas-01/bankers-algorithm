@@ -45,3 +45,14 @@ If no such i exists, go to step 4. <br>
 Finish[i] = true <br>
 Go to step 2. <br>
 4. If Finish [i] == true for all i, then the system is in a safe state. <br>
+
+### Resource-Request Algorithm
+Request<sub>i</sub> = request vector for process P<sub>i</sub>. If Request<sub>i</sub> [j] = k then process P<sub>i</sub>, wants k instances of resource type R<sub>i</sub>. <br>
+1. If Request<sub>i</sub> ≤ Need<sub>i</sub> go to step 2. Otherwise, raise error conditions, since the process has exceeded its maximum claim. <br>
+2. If Request<sub>i</sub> ≤ Available go to step 3. Otherwise P<sub>i</sub> must wait, since resources are not available. <br>
+3. Pretend to allocate requested resources to Pi by modifying the state as follows: <br>
+Available = Available - Request<sub>i</sub>; <br>
+Allocation<sub>i</sub> = Allocation<sub>i</sub> + Request<sub>i</sub>; <br>
+Need<sub>i</sub> = Need<sub>i</sub> - Request<sub>i</sub> ; <br>
+a. If safe - the resources are allocated to P<sub>i</sub>. <br>
+b. If unsafe - P<sub>i</sub> must wait, and the old resource-allocation state is restored.
