@@ -35,13 +35,13 @@ Banker’s algorithm comprises of two algorithms:
 #### Safety Algorithm
 1. Let Work and Finish be vectors of length m and n, respectively. <br> 
     Initialize:<br> 
-        Work = Available <br>        
+        Work = Available
         Finish [i] = false for I = 0, 1, ..., n-1 <br>        
 2. Find an į such that both: <br> 
 a. Finish [i] = false <br> 
 b. Need<sub>i</sub> <= Work <br> 
 If no such i exists, go to step 4. <br>
-3. Work = Work + Allocationi
-Finish[i] = true
-Go to step 2.
-4. If Finish [i] == true for all i, then the system is in a safe state.
+3. Work = Work + Allocation<sub>i</sub> <br>
+Finish[i] = true <br>
+Go to step 2. <br>
+4. If Finish [i] == true for all i, then the system is in a safe state. <br>
