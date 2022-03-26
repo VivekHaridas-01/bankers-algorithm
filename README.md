@@ -24,5 +24,6 @@ There are four types of data structures used to implement Banker’s algorithm.
 - Need is a 2D array of size ‘n*m’.
 - It is used to define the remaining resources which are required for each process.
 - Need [i, j] = k indicates that for the execution of process, ‘Pi’, presently ‘k’ instances of resource type ‘Rj’ are required.
-
-Need [ i,j ] = Max [ i,j ] – Allocation [ i,j
+<p align="center">
+    Need [i,j] = Max [i,j] – Allocation [i,j]
+</p>
