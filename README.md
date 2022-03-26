@@ -27,9 +27,10 @@ There are four types of data structures used to implement Banker’s algorithm.
 <p align="center">
     <b>Need [i,j] = Max [i,j] – Allocation [i,j]<b>
 </p>
+        
 ## Algorithm
-Banker’s algorithm comprises of two algorithms:
-1. Safety algorithm
+Banker’s algorithm comprises of two algorithms:<br>
+1. Safety algorithm<br>
 2. Resource request algorithm
 
 #### Safety Algorithm
