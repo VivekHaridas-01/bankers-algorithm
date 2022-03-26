@@ -9,26 +9,20 @@ There are four types of data structures used to implement Banker’s algorithm.
 4. Need Matrix (n*m)
 
 Allocation Matrix
-● Allocation Matrix is a 2D array, of size ‘n*m’.
-● It is used to define the number of resources of each kind presently
-assigned to each process.
-● Allocation[i, j] = k indicates that the current process ‘Pi’ is assigned ‘k’
-instances of ‘Rj’ resource type.
+- Allocation Matrix is a 2D array, of size ‘n*m’.
+- It is used to define the number of resources of each kind presently assigned to each process.
+- Allocation[i, j] = k indicates that the current process ‘Pi’ is assigned ‘k’ instances of ‘Rj’ resource type.
 Max Matrix
-● Max Matrix is a 2D array of size ‘n*m’.
-● It is used to determine the maximum number of resources that each
-process requests.
-● Max[i, j] = k indicates that ‘Pi’ can demand or request maximum ‘k’
-instances of ‘Rj’ resource type.
+- Max Matrix is a 2D array of size ‘n*m’.
+- It is used to determine the maximum number of resources that each process requests.
+- Max[i, j] = k indicates that ‘Pi’ can demand or request maximum ‘k’ instances of ‘Rj’ resource type.
 Available Vector
-● Available is a 1D array of size ‘m’.
-● It is used to determine the number of available resources of each kind.
-● Available[j] = k indicates that we have ‘k’ instances of ‘Rj’ resource
-type.
+- Available is a 1D array of size ‘m’.
+- It is used to determine the number of available resources of each kind.
+- Available[j] = k indicates that we have ‘k’ instances of ‘Rj’ resource type.
 Need Matrix
-● Need is a 2D array of size ‘n*m’.
-● It is used to define the remaining resources which are required for each
-process.
-● Need [i, j] = k indicates that for the execution of process, ‘Pi’, presently
+- Need is a 2D array of size ‘n*m’.
+- It is used to define the remaining resources which are required for each process.
+- Need [i, j] = k indicates that for the execution of process, ‘Pi’, presently
 ‘k’ instances of resource type ‘Rj’ are required.
 Need [ i,j ] = Max [ i,j ] – Allocation [ i,j
