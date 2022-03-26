@@ -33,7 +33,7 @@ Banker’s algorithm comprises of two algorithms:<br>
 1. Safety algorithm<br>
 2. Resource request algorithm
 
-#### Safety Algorithm
+### Safety Algorithm
 1. Let Work and Finish be vectors of length m and n, respectively. <br> 
     Initialize:<br> 
         Work = Available <br>
