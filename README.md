@@ -39,7 +39,7 @@ Banker’s algorithm comprises of two algorithms:
         Finish [i] = false for I = 0, 1, ..., n-1 <br>        
 2. Find an į such that both: <br> 
 a. Finish [i] = false <br> 
-b. Need<sub>i</sub> <= Work <br> 
+b. Need<sub>i</sub> ≤ Work <br> 
 If no such i exists, go to step 4. <br>
 3. Work = Work + Allocation<sub>i</sub> <br>
 Finish[i] = true <br>
@@ -51,8 +51,10 @@ Request<sub>i</sub> = request vector for process P<sub>i</sub>. If Request<sub>i
 1. If Request<sub>i</sub> ≤ Need<sub>i</sub> go to step 2. Otherwise, raise error conditions, since the process has exceeded its maximum claim. <br>
 2. If Request<sub>i</sub> ≤ Available go to step 3. Otherwise P<sub>i</sub> must wait, since resources are not available. <br>
 3. Pretend to allocate requested resources to Pi by modifying the state as follows: <br>
-Available = Available - Request<sub>i</sub>; <br>
-Allocation<sub>i</sub> = Allocation<sub>i</sub> + Request<sub>i</sub>; <br>
-Need<sub>i</sub> = Need<sub>i</sub> - Request<sub>i</sub> ; <br>
+<p align="center">
+<b>Available = Available - Request<sub>i</sub>;</b> <br>
+<b>Allocation<sub>i</sub> = Allocation<sub>i</sub> + Request<sub>i</sub>;</b> <br>
+<b>Need<sub>i</sub> = Need<sub>i</sub> - Request<sub>i</sub> ;</b> <br>
+</p>
 a. If safe - the resources are allocated to P<sub>i</sub>. <br>
 b. If unsafe - P<sub>i</sub> must wait, and the old resource-allocation state is restored.
